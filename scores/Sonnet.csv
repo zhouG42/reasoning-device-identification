@@ -1,0 +1,13 @@
+Type,Query,Total,Match,Wrong,Missing,Overmatch,Generated,Recall,Precision,F1
+,,,,,,,,,,
+Ownership,2_1,28,28,0,0,0,28,1,1,1
+Containment,2_2,43,43,0,0,0,43,1,1,1
+,,,,,,,,,,
+Ownership,3,48,45,0,3,3,48,0.9375,0.9375,0.9375
+Containment,3,57,57,0,0,0,57,1,1,1
+,,,,,,,,,,
+Ownership,4,24,24,0,0,4,28,1,0.857142857,0.923076923
+Containment,4,26,26,0,0,0,26,1,1,1
+,,,,,,,,,,
+Ownership,5,14,14,0,0,2,16,1,0.875,0.933333333
+Containment,5,16,16,0,0,0,16,1,1,1
