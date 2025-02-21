@@ -1,0 +1,38 @@
+@prefix : <http://example.com/ontology#> .
+@prefix bot: <https://w3id.org/bot#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <http://example.org/> .
+
+:Alice a foaf:Person ;
+    :sitsIn :meeting_room ;
+    foaf:knows :bob ;
+    foaf:name "Alice" .
+
+:Bob a foaf:Person ;
+    :sitsIn :IoT_lab ;
+    foaf:knows :alice ;
+    foaf:name "Bob" .
+
+:Storey4 a bot:Storey ;
+    bot:hasSpace :IoT_lab,
+        :meeting_room .
+
+
+<http://example.com/td/td0> a :Controller ;
+    :hasMacAddress "xxx" .
+
+<http://example.com/td/td1> a :Light ;
+    :hasMacAddress "D4AA551E0F33" .
+
+<http://example.com/td/td2> a :Light ;
+    :hasMacAddress "C895CFE240A0" .
+
+:IoT_lab a :Office,
+        bot:Space ;
+    bot:containsElement <http://example.com/td/td0>,
+        <http://example.com/td/td1> .
+
+:meeting_room a :Office,
+        bot:Space ;
+    bot:containsElement <http://example.com/td/td2> .
+
