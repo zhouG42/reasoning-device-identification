@@ -1,10 +1,9 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix : <http://example.com/ontology#> .
+@prefix : <http://example.org/data#> .
 @prefix schema: <https://schema.org/> .
 @prefix bot: <https://w3id.org/bot#> .
-
 
 :Daniel a schema:Person ;
     schema:givenName "Daniel" ;
@@ -25,7 +24,9 @@
     schema:memberOf :Wintechis ;
     schema:jobTitle "Research Assistant" ;
     schema:colleague :Daniel, :Sebastian, :Thomas, :Marco, :Micheal, :Rene, :Tim, :Andreas, :Monika, :Layla ;
-    schema:workLocation <#4-443> .
+    schema:workLocation <#4-443> ;
+    :currentLocation <IoT>
+    :owns <td1>.
 
 :Sebastian a schema:Person ;
     schema:givenName "Sebastian" ;
@@ -256,7 +257,7 @@
                         <http://example.com/td/td33> .
 
 
-<http://example.com/td/td1> rdf:type :Light ;
+<http://v .com/td/td1> rdf:type :Light ;
                             :personalDevice true ;
                             :hasMacAddress "xx1" .
 <http://example.com/td/td2> rdf:type :Light ;

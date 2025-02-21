@@ -1,7 +1,7 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix : <http://example.com/ontology#> .
+@prefix : <http://example.org/ontology#> .
 @prefix schema: <https://schema.org/> .
 @prefix bot: <https://w3id.org/bot#> .
 
@@ -79,69 +79,69 @@ bot:containsElement a rdf:Property ;
 
 :Light a rdfs:Class ;
     rdfs:label "Light" ;
-    rdfs:Subclassof :Device .
+    rdfs:subClassOf :Device .
 
 :Heater a rdfs:Class ;
     rdfs:label "Heater" ;
-    rdfs:Subclassof :Device .
+    rdfs:subClassOf :Device .
 
 :Lock a rdfs:Class ;
     rdfs:label "Lock" ;
-    rdfs:Subclassof :Device .
+    rdfs:subClassOf :Device .
 
 :Camera a rdfs:Class ;
     rdfs:label "Camera" ;
-    rdfs:Subclassof :Device .
+    rdfs:subClassOf :Device .
 
 :AC a rdfs:Class ;
     rdfs:label "AC" ;
-    rdfs:Subclassof :Device .
+    rdfs:subClassOf :Device .
 
 :TV a rdfs:Class ;
     rdfs:label "TV" ;
-    rdfs:Subclassof :Device .
+    rdfs:subClassOf :Device .
 
 :Speaker a rdfs:Class ;
     rdfs:label "Speaker" ;
-    rdfs:Subclassof :Device .
+    rdfs:subClassOf :Device .
 
 :Alarm a rdfs:Class ;
     rdfs:label "Alarm" ;
-    rdfs:Subclassof :Device .
+    rdfs:subClassOf :Device .
 
 :LedStrip a rdfs:Class ;
     rdfs:label "LED Strip" ;
-    rdfs:Subclassof :Device .
+    rdfs:subClassOf :Device .
 
 :Display a rdfs:Class ;
     rdfs:label "Display" ;
-    rdfs:Subclassof :Device .
+    rdfs:subClassOf :Device .
 
 :Radio a rdfs:Class ;
     rdfs:label "Radio" ;
-    rdfs:Subclassof :Device .
+    rdfs:subClassOf :Device .
 
 :Kettle a rdfs:Class ;
     rdfs:label "Kettle" ;
-    rdfs:Subclassof :Device .
+    rdfs:subClassOf :Device .
 
 :CoffeeMachine a rdfs:Class ;
     rdfs:label "Coffee Machine" ;
-    rdfs:Subclassof :Device .
+    rdfs:subClassOf :Device .
 
 :Microwave a rdfs:Class ;
     rdfs:label "Microwave" ;
-    rdfs:Subclassof :Device .
+    rdfs:subClassOf :Device .
 
 :Dishwasher a rdfs:Class ;
     rdfs:label "Dishwasher" ;
-    rdfs:Subclassof :Device .
+    rdfs:subClassOf :Device .
 
 :Dryer a rdfs:Class ;
     rdfs:label "Dryer" ;
-    rdfs:Subclassof :Device .
+    rdfs:subClassOf :Device .
 
 :Ventilator a rdfs:Class ;
     rdfs:label "Ventilator" ;
-    rdfs:Subclassof :Device .
+    rdfs:subClassOf :Device .
 
