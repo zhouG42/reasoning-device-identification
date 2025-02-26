@@ -1,0 +1,46 @@
+@prefix : <http://example.com/> .
+@prefix td: <http://example.com/td/> .
+@prefix bot: <https://w3id.org/bot#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+:Alice a schema:Person ;
+    schema:givenName "Alice" ;
+    schema:workLocation :Office ;
+    :currentLocation :IoTLab ;
+    :ownsDevice td:td4 .
+
+:Storey4 a bot:Storey ;
+    bot:hasSpace :CopyRoom,
+        :IoTLab,
+        :Office .
+
+:CopyRoom a bot:Space ;
+    schema:publicAccess true ;
+    bot:containsElement td:td1 .
+
+:IoTLab a bot:Space ;
+    schema:publicAccess true ;
+    bot:containsElement td:td2 .
+
+:Office a bot:Space ;
+    schema:publicAccess false ;
+    bot:containsElement td:td3,
+    td:td4 .
+
+td:td1 a :Light ;
+    :hasMacAddress "xx1" ;
+    :personalDevice false .
+
+td:td2 a :Light ;
+    :hasMacAddress "xx2" ;
+    :personalDevice false .
+
+td:td3 a :Light ;
+    :hasMacAddress "xx3" ;
+    :personalDevice false .
+
+td:td4 a :Light ;
+    :hasMacAddress "xx4" ;
+    :personalDevice true .
